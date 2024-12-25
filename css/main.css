@@ -1,0 +1,130 @@
+body {
+    user-select: none; 
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none;
+    font-family: sans-serif;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+header {
+    min-height: 60px;
+    background: #f0f0f0; 
+    color: #333; 
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0 5%; 
+    
+}
+
+.rotate {
+    display: flex;
+    cursor: pointer; 
+}
+
+.rotate-icon {
+    margin-left: 15px;
+    width: 30px; 
+    height: 30px; 
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    min-height: 60px;
+    background: #f0f0f0; 
+    color: #333; 
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0 5%; 
+    margin-top: 15px;
+}
+
+.board {
+    margin: 50px;
+    border: 5px solid orangered;
+    padding: 5px;
+    position: relative;
+    min-width: 90%; 
+    height: 600px;
+    overflow: hidden;
+}
+
+.board p{
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.draggable {
+    position: absolute;
+    cursor: grab;
+}
+
+.draggable:active {
+    cursor: grabbing;
+}
+
+.figure {
+    position: absolute;
+}
+
+.figure.figure-dog {
+    width: 150px;
+}
+
+.figure.figure-food {
+    width: 50px;
+}
+
+.figure.figure-house {
+    width: 150px;
+}
+
+.figure.figure-toys {
+    width: 50px;
+}
+
+.no-pointer-events .draggable  {
+    pointer-events: none; 
+}
+
+.cursor-rotate {
+    cursor: url(../img/rotate3.png), auto; 
+}
+
+.success-animation {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 148px; 
+    opacity: 0; 
+    transition: opacity 1s ease-in-out; 
+    pointer-events: none; 
+}
+
+#rightPositionsImg {
+    display: none;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Задание 5</title>
+</head>
+<body>
+    <header>
+        <h1>Соберите животное</h1>
+        <div onclick="randomizePositions()" class="rotate">
+            <p>Обновить</p>
+            <img src="img/rotate3.png" alt="Rotate" class="rotate-icon" />
+        </div>
+       
+    </header>
+    <main>
+        <div class="info">
+            <h2>Информация</h2>
+            <p>Помогите расположить элементы правильно.</p>
+            <p>Нажмите на иконку в правом верхнем углу, чтобы случайным образом изменить положение элементов.</p>
+        </div>
+        <div class="board">
+            <p>Собрать животное <br> в любом месте</p>
+            <img id="house" draggable="false" class="figure figure-house draggable" src="img/dog-house.png" alt="house">
+            <img id="toys" draggable="false" class="figure figure-toys draggable" src="img/toys.png" alt="toys">
+            <img id="dog" draggable="false" class="figure figure-dog draggable" src="img/german-shepherd.png" alt="dog">
+            <img id="food" draggable="false" class="figure figure-food draggable" src="img/dog-food.png" alt="food">
+            <div id="successAnimation" class="success-animation" style="display: none;">
+                ✔️
+            </div>
+        </div>
+        <button onclick="showRightPositions()" >
+            Показать правильное положение фигур
+        </button>
+        <img id="rightPositionsImg"src="./img/rightPos.PNG" alt="rightPositions">
+    </main>
+    <footer>
+        <p>© 2024 Все права защищены.</p>
+        <p>Разработал Никита Коркуц </p>
+    </footer>
+    <script type="text/javascript" src="js/main.js" ></script>
+</body>
+</html>
